@@ -19,7 +19,7 @@ def haversine_formula(lat1, long1, lat2, long2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
 
     distance = R * c 
-    return distance
+    return round(distance) 
 
 
 postcodes = pd.read_csv('australian_postcodes.csv')
