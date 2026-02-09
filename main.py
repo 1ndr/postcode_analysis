@@ -42,6 +42,7 @@ for index_i, row_i in postcodes.iterrows():
         distance_matrix.loc[row_i_postcode, row_j_postcode] = distance
         distance_matrix.loc[row_j_postcode, row_i_postcode] = distance
 
+        print(f"found distance for {row_i_postcode} and {row_j_postcode}: {distance}")
 
 distance_matrix.to_csv('distance_matrix.csv')
 
