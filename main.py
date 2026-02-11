@@ -22,7 +22,7 @@ def haversine_formula(lat1, long1, lat2, long2):
     return round(distance, 2) 
 
 
-postcodes = pd.read_csv('australian_postcodes.csv')
+postcodes = pd.read_csv('victorian_postcodes.csv')
 postcodes_list = postcodes['postcode'].tolist()
 
 distance_matrix = pd.DataFrame(index = postcodes_list, columns = postcodes_list)
